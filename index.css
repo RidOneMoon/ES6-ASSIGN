@@ -1,0 +1,13 @@
+/* Custom Styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+#category-list button.active {
+  background-color: #065f46;
+  color: white;
+}
+
+#plant-modal {
+  z-index: 1000;
+}
