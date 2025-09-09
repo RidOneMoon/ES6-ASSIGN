@@ -12,57 +12,95 @@
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
+  <!-- css link -->
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body class="bg-[#ecfdf5]">
 
   <!-- Navbar -->
-  <div class="navbar bg-base-100 shadow-sm bg-[#15803d] px-10 lg:px-20">
-    <div class="navbar-start">
-      <a class="btn btn-ghost text-2xl lg:text-3xl text-white font-bold">Green Earth</a>
+
+<div class="navbar bg-[#15803d] shadow-sm flex-col lg:flex-row px-4 lg:px-20">
+
+  <div class="w-full flex flex-col items-start gap-3 lg:hidden">
+    <!-- Hamburger -->
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost text-white p-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+      <ul tabindex="0"
+        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>About</a></li>
+        <li><a>Gallery</a></li>
+        <li><a>Plant a Tree</a></li>
+      </ul>
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ol class="flex gap-8 text-lg text-white">
-        <li>About</li>
-        <li>Gallery</li>
-        <li>Plant a Tree</li>
-      </ol>
-    </div>
-    <div class="navbar-end">
-      <a class="btn rounded-full text-[#15803d] bg-[#facc15] border-transparent text-lg px-6">Plant a Tree</a>
-    </div>
+
+    <!-- Logo -->
+    <a class="btn btn-ghost text-2xl text-white font-bold">Green Earth</a>
+
+    <!-- Button -->
+    <a class="btn rounded-full text-[#15803d] bg-[#facc15] border-transparent text-lg px-6 hover:bg-yellow-400">
+      Plant a Tree
+    </a>
   </div>
 
+  <div class="hidden lg:flex w-full items-center justify-between">
+    <!-- Left: Logo -->
+    <a class="btn btn-ghost text-3xl text-white font-bold">Green Earth</a>
+
+    <!-- Center menu -->
+    <ul class="menu menu-horizontal px-1 text-lg text-white gap-6">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Plant a Tree</a></li>
+    </ul>
+
+    <!-- Right button -->
+    <a class="btn rounded-full text-[#15803d] bg-[#facc15] border-transparent text-lg px-6 hover:bg-yellow-400">
+      Plant a Tree
+    </a>
+  </div>
+</div>
+
+
+
+
   <!-- Banner -->
-  <header class="bg-[#d1fae5] py-20 relative flex justify-center items-center text-center overflow-hidden">
-    <!-- Left Leaf -->
-    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 hidden md:block">
-      <img src="/assets/hero-leaf1.png" alt="Left Leaf" class="h-40 md:h-72 lg:h-96 w-auto" />
-    </div>
+  <header class="bg-[#d1fae5] py-16 md:py-20 relative flex flex-col items-center text-center overflow-hidden">
+  <!-- Left Leaf -->
+  <div class="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block">
+    <img src="/assets/hero-leaf1.png" alt="Left Leaf"
+         class="max-h-40 sm:max-h-56 md:max-h-72 lg:max-h-96 w-auto" />
+  </div>
 
-    <!--Content -->
-    <div class="max-w-2xl px-6 z-10">
-      <h1 class="text-3xl md:text-5xl font-bold text-gray-900">
-        Plant a Tree, Grow a Future
-      </h1>
-      <p class="mt-3 text-gray-700">
-        Join our mission to plant 1 million trees and make the Earth greener for future generations.
-      </p>
-      <button class="mt-6 bg-[#facc15] text-green-900 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
-        Get Involved
-      </button>
-    </div>
+  <!-- Content -->
+  <div class="max-w-xl px-6 z-10">
+    <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900">
+      Plant a Tree, Grow a Future
+    </h1>
+    <p class="mt-3 text-sm sm:text-base md:text-lg text-gray-700">
+      Join our mission to plant 1 million trees and make the Earth greener for future generations.
+    </p>
+    <button class="mt-6 bg-[#facc15] text-green-900 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
+      Get Involved
+    </button>
+  </div>
 
-    <!-- Right Leaf -->
-    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 hidden md:block">
-      <img src="/assets/hero-leaf2.png" alt="Right Leaf" class="h-40 md:h-72 lg:h-96 w-auto" />
-    </div>
-  </header>
+  <!-- Right Leaf -->
+  <div class="absolute right-0 top-1/2 -translate-y-1/2 hidden md:block">
+    <img src="/assets/hero-leaf2.png" alt="Right Leaf"
+         class="max-h-40 sm:max-h-56 md:max-h-72 lg:max-h-96 w-auto" />
+  </div>
+</header>
 
-  <!-- Categories + Cards + Cart -->
+
+  <!-- Categories  Cart -->
   <section id="trees" class="py-16 max-w-[1650px] mx-auto px-8 lg:px-20">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
       <!-- Categories Sidebar -->
@@ -135,10 +173,7 @@
 
 
 
-
- 
-
-  <!-- Plant a Tree Today -->
+  <!-- Plant a Tr -->
   <section class="bg-[#166534] py-20 px-8 ">
     <h2 class="text-3xl font-bold text-center text-white mb-10">Plant a Tree Today</h2>
     <form class="max-w-md mx-auto bg-[#15803d] p-8 rounded-lg space-y-4 text-sm">
