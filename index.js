@@ -93,7 +93,7 @@ async function showPlantDetail(id) {
 
 // Cart Functions
 function addToCart(id, name, price) {
-  alert(`✅ ${name} added to cart!`);
+  alert(`${name} added to cart!`);
 
   // Check if item already exists
   const existingItem = cart.find(item => item.id === id);
