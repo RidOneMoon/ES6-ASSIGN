@@ -1,4 +1,3 @@
-/* Custom Styles */
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -11,3 +10,26 @@ body {
 #plant-modal {
   z-index: 1000;
 }
+
+#plants .card, 
+#plants div {
+  font-size: 1.1rem;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+header img {
+  max-width: 220px;
+}
+
+/* Custom CSS for responsive margin fix */
+@media (max-width: 768px) {
+  .mr-\[10px\], .ml-\[10px\] {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
